@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+h1 {
+    color: hsl(228, 12%, 48%);
+    padding-block: 20px;
+    font-size: 30px;
+    /* hsl(234, 12%, 34%) */
+}
+p {
+    color: hsl(229, 6%, 66%);
+    line-height: 25px;
+    word-spacing: 5px
+}
+
+/* The whole page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    row-gap: 50px;
+}
+            /*The First Page view  */
+.main, .fifth_page {
+    /* height: 100vh; */
+    padding: 30px;
+    text-align: center;
+}
+/* logo of first page */
+.logo {
+    padding-block: 20px;
+}
+section > .main h1{
+    padding-block: 20px;
+    font-size: 12px;
+    /* padding-inline: 50px; */
+}
+p {
+    line-height: 23px;
+}
+/* Download button */
+.download {
+    padding: 10px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50px;
+    margin-block: 20px;
+}
+.iOS {
+    margin-top: 50px;
+    background-color: hsl(171, 66%, 44%);
+}
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+.download a {
+    color: #fff;
+}
+
+
+            /* SECOND PAGE VIEW */
+.second_page {
+    display: flex;
+    flex-direction: column;
+}
+/* Desktop image Container*/
+.second_page .image, .third_page .image {
+    text-align: center;
+}
+/* Desktop image itself */
+.second_page .image img, .third_page .image img {
+    width: 300px;
+    margin: auto;
+}
+/* FIRST HEADER AND PARAGRAPH */
+.head_content {
+    text-align: center;
+}
+/* PARAGRAPH */
+.head_content p {
+    padding: 0 30px 30px;
+}
+/*  QUICK SEARCH, ICLOUDE SYNC AND COMPLETE HISTORY */
+.second_page > .content {
+    padding: 20px
+}
+.second_page > .content article {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 20px;
+}
+h2 {
+    color: hsl(228, 12%, 48%);
+    padding-block: 10px;
+}
+
+
+/* THIRD PAGE OF VIEW */
+.third_page {
+    text-align: center;
+}
+
+.third_page p {
+    padding: 0 30px 30px;
+}
+
+/*  FOURTH PAGE OF VIEW */
+.fourth_page {
+    text-align: center;
+}
+.fourth_page p {
+    padding: 0 30px 30px;
+}
+.box .image {
+    padding: 20px;
+}
+
+.companies_logo .image {
+    padding: 25px;
+}
+.companies_logo .image img {
+    width: 125px;
+}
+
+/* FIFTH PAGE VIEW */
+.fifth_page {
+    padding-top: 60px;
+}
+
+/* FOOTER */
+footer {
+    /* height: 100vh; */
+    text-align: center;
+}
+footer .image {
+    padding-block: 25px;
+}
+footer .image img {
+    width: 75px;
+}
+footer a {
+    display: block;
+    padding-block: 20px;
+    text-decoration: none;
+    color: hsl(229, 6%, 66%);
+}
+footer a:hover {
+    color:  hsl(171, 66%, 44%);
+}
+
+/* Desktop version */
+@media screen and (min-width: 375px) {
+    /* First Page */
+    .main, .fifth_page {
+        width: 600px;
+    }
+    .download {
+        display: inline-block;
+        padding: 12px;
+    }
+    .iOS {
+        margin-right: 20px;
+    }
+
+    /* Second Page */
+    .second_page {
+        padding-right: 50px;
+        margin: 0;
+      /* background-color: aqua; */
+    }
+    .second_page .head_content {
+        width: 600px;
+        margin: auto;
+    }
+    .second_page .content  {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 50px;
+    }
+    .second_page .content .image img {
+        width: 600px;
+    }
+    .second_page .content section article {
+        text-align: left;
+        /* background-color: pink; */
+        /* padding-right: 5s0px; */
+    }
+
+    /* Third Page */
+    .third_page .content {
+        width: 700px;
+        margin: auto;
+        padding-block: 30px;
+    }
+    .third_page  .image img {
+        width: auto;
+    }
+
+    /* Fourth Page */
+ 
+    .fourth_page article {
+        display: flex;
+        /* column-gap: 5px */
+    }
+    .box {
+        width: 380px;
+        margin: auto;
+    }
+    .companies_logo {
+        /* background-color: pink; */
+        column-gap: auto;
+        margin-block-start: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .companies_logo .image img {
+        width: auto;
+    }
+
+    /* FIFTH PAGE OF VIEW */
+    .fifth_page {
+        width: 800px;
+    }
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 239, 241);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 100px;
+    
+    }
+     footer .info {
+        display: flex;
+        align-items: center;
+    }
+    footer .info .content {
+        display: flex;
+        padding-inline: 10px;
+    }
+    footer .info .content .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding-block: 10px; */
+        padding-inline: 40px;
+    }
+    footer .info .content .col a {
+        padding-block: 5px;
+    }
+    /* ICONS */
+    footer .icons {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    
+    footer .icons .image img {
+        width: 20px;
+    }
+    footer .icons .image a:hover {
+        color: pink;
+        border-color: aqua;
+    }
+
+}
